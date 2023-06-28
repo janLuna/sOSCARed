@@ -18,7 +18,6 @@ db = {
 	"users": {
 		"janLuna": {
 			"authkey": "phoenix",
-			"password": "kilyself",
 			"pwhash": "aa56d3853c51675b74ac797061363c59",
 			"email": "janLuna@example.com",
 			"evilLevel": 0,
