@@ -95,6 +95,29 @@ class OSERVICE:
 	BART_QUERY2 = auto().to_bytes(2,"big")
 	BART_REPLY2 = auto(True).to_bytes(2,"big")
 
+class ICBM:
+	ERR = auto().to_bytes(2,"big")
+	ADD_PARAMETERS = auto().to_bytes(2,"big")
+	DEL_PARAMETERS = auto().to_bytes(2,"big")
+	PARAMETER_QUERY = auto().to_bytes(2,"big")
+	PARAMETER_REPLY = auto().to_bytes(2,"big")
+	CHANNEL_MSG_TOHOST = auto().to_bytes(2,"big")
+	CHANNEL_MSG_TOCLIENT = auto().to_bytes(2,"big")
+	EVIL_REQUEST = auto().to_bytes(2,"big")
+	EVIL_REPLY = auto().to_bytes(2,"big")
+	MISSED_CALLS = auto().to_bytes(2,"big")
+	CLIENT_ERR = auto().to_bytes(2,"big")
+	HOST_ACK = auto().to_bytes(2,"big")
+	SIN_STORED = auto().to_bytes(2,"big")
+	SIN_LIST_QUERY = auto().to_bytes(2,"big")
+	SIN_LIST_REPLY = auto().to_bytes(2,"big")
+	SIN_RETRIEVE = auto().to_bytes(2,"big")
+	SIN_DELETE = auto().to_bytes(2,"big")
+	NOTIFY_REQUEST = auto().to_bytes(2,"big")
+	NOTIFY_REPLY = auto().to_bytes(2,"big")
+	CLIENT_EVENT = auto().to_bytes(2,"big")
+	SIN_REPLY = auto().to_bytes(2,"big")
+
 AUTH_HASH_MD5 = bytes("AOL Instant Messenger (SM)","cp437")
 
 class FLAP:
